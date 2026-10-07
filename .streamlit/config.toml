@@ -1,5 +1,6 @@
 [server]
 #port = 8888
+#必须启用静态服务开关
 enableStaticServing = true
 
 [client]
