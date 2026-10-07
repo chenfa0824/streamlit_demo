@@ -30,6 +30,10 @@ st.text("这是音频")
 st.audio("static/videos/1.m4a")
 st.text("这是视频")
 st.video("static/videos/1.mp4", width=1200)
+st.text("Streamlit 的静态文件服务出于安全考虑，只对图片、字体和 XML/JSON 等特定扩展名设置正确的 Content-Type。MP4 不在这个白名单里，会被以 text/plain 类型发送，浏览器不会将其识别为视频，因此无法播放")
+video_file = open("static/videos/1.mp4", "rb")
+video_bytes = video_file.read()
+st.video(video_bytes)
 
 st.text("用 st.markdown 嵌入原生 <video>")
 # 将视频放在 .streamlit/static/ 目录下
