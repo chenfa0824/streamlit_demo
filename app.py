@@ -38,9 +38,6 @@ pg = st.navigation({
              animation5, animation6, sidebar1, sidebar2, tab1, tab2, table1, table2
              ],
     # "UI": [ui1, ui2, ui3, elementui1, elementui2, elementui3
-    # "Jacoco": [jacocoHtml, jacocoXml],
-    # "工具": [xmind1, xmind2, crm_api, hrm_api, git_branch],
-    # "项目": [liang1, liang2, liang3,mock1, mock2],
 
 })
 
